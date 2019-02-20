@@ -1,24 +1,33 @@
-$(document).ready(function () {
+$(document).ready(function() {
+    
+var enemyHealth;
+var totalScore = 0;
+var wins = 0;
+var losses = 0;
+var isGameOver = false;
+  
+var byow = $("#byow");
+var dusty = $("#dusty");
+var heavy = $("#heavy");
+var lucky = $("#lucky");
+  
+   
+var heroes = [byow, dusty, heavy, lucky];
+  
+  
+function getRandomEnemyHealth() {
+  var randomTarget = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+  
+    return ;
+}
 
-    var characters = {
-        "byow": {
-            name: "Dr. Byow",
-            hp: 160,
-            damage: 13
-        },
-        "dusty": {
-            name: "Dusty Phoenix",
-            hp: 130,
-            damage: 10
-        },
-        "heavy": {
-            name: "Heavy Duty",
-            hp: 170,
-            damage: 12,
-        },
-        "lucky": {
-            name: "Lucky Day",
-            hp: 150,
-            damage: 14,
-        }
-    }
+console.log(getRandomEnemyHealth());
+  
+function getHeroHP() {
+    var randomHeroHP = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+  
+    return randomHeroHP;
+}
+
+console.log(getCrystalNumber());
+  

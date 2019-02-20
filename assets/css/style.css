@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   font-family: "Arcade Classic", sans-serif;
-  font-size: 2vw;
+  font-size: 1.75vw;
   color: #fff00f;
   text-align: center;
   background: rgba(10, 10, 10, 0.5);
@@ -70,17 +70,21 @@ img {
 .characters {
   border-style: dotted;
   border-color: #fff00f;
+
 }
-.emptydiv1{
-    font-family: "Arcade Classic", sans-serif;
-    font-size: 2vw;
-    color: #fff00f;
-    text-align: center;
-    background: rgba(10, 10, 10, 0.5);
-    text-shadow: -3px 0 black, 0 2px purple, 2px 0 #0000, 0 -2px purple;
-    border-style: dotted;
-    border-color: #fff00f;
+.choose-CPU
+.choose-player {
+font-family: "Arcade Classic", sans-serif;
+  font-size: 1.75vw;
+  color: #fff00f;
+  text-align: center;
+  background: rgba(10, 10, 10, 0.5);
+  text-shadow: -3px 0 black, 0 2px purple, 2px 0 #0000, 0 -2px purple;
+  border-style: dotted;
+  border-color: #fff00f;
+    
 }
+
 .hp{
     font-family: "Arcade Classic", sans-serif;
   font-size: 2vw;
