@@ -1,0 +1,83 @@
+body {
+  background-image: url("../images/tspbackground.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*padding-top: 250px;*/
+}
+.jumbotron {
+  background: transparent;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  background: rgba(10, 10, 10, 0.5);
+}
+
+h1 {
+  font-family: "Arcade Classic", sans-serif;
+  font-size: 6vw;
+  color: #fff00f;
+  text-align: center;
+  background: rgba(10, 10, 10, 0.5);
+  letter-spacing: 1vw;
+  text-shadow: -4px 0 black, 0 1px purple, 1px 0 #0000, 0 -2px purple;
+  border-style: dotted;
+  border-color: #fff00f;
+}
+
+h2 {
+  font-family: "Arcade Classic", sans-serif;
+  font-size: 2vw;
+  color: #fff00f;
+  text-align: center;
+  background: rgba(10, 10, 10, 0.5);
+  text-shadow: -3px 0 black, 0 2px purple, 2px 0 #0000, 0 -2px purple;
+  border-style: dotted;
+  border-color: #fff00f;
+}
+
+.lead {
+  color: #fff00f;
+  text-align: center;
+  background: rgba(10, 10, 10, 0.6);
+  border-style: dotted;
+  border-color: #fff00f;
+}
+.container1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: dotted;
+  border-color: #fff00f;
+  background: rgba(10, 10, 10, 0.6);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  background-color: black;
+  background: rgba(10, 10, 10, 0.9);
+  border-style: dotted;
+  border-color: #fff00f;
+}
+#images {
+  text-align: center;
+  background: transparent;
+  padding: 0;
+  margin: 10px;
+  border-style: dotted;
+  border-color: #fff00f;
+}
+.characters {
+  border-style: dotted;
+  border-color: #fff00f;
+}
+
+#audioControl {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Arcade Classic";
+  src: url("../fonts/arcadeclassic-webfont.woff2") format("woff2"),
+    url("../fonts/arcadeclassic-webfont.woff") format("woff");
+}
