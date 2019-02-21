@@ -15,7 +15,13 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+
     <link href="assets/css/style.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="jumbotron jumbotron-fluid">
@@ -26,9 +32,13 @@
         <p class="lead">
           HOW TO PLAY:
           <BR />
-          SELECT A PLAYER THEN SELECT AN OPPONENT. STRIKE YOUR OPPONENT TO
-          DAMAGE THEM UNTIL THEY ARE DEFEATED. CYCLE THROUGH OPPONENTS UNTIL YOU
-          DEFEAT THEM ALL OR YOU ARE KILLED!
+         You will be given the Supreme Leader's number at the start of the game. 
+         <br/>
+         There are 2 heroes to each side of him. By clicking on a hero you 
+         will add a specific amount of points to your total.
+         <br>
+         You WIN by matching your total score to the Supreme Leader's number. If your score goes above, YOU LOSE.
+         The value of each hero will be hidden until you click on it.
         </p>
       </div>
     </div>
@@ -53,35 +63,47 @@
           </div>
 
           <div class="col-sm-4">
-            <div class="box-3">
-              <div class="enemy ">
-                <img src="assets/images/tspdustyphoenixfront.png" />
-                <h2>Man in the Mask</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-2">
-            <div class="box-5">
-              <div class="characters" id="heavy">
-                <img src="assets/images/tspheavydutyfront.png" />
-                <h2>HEAVY DUTY</h2>
-              </div>
+            <div id="enemy">
+              <img src="assets/images/maninthemask.png" class="maninmask" />
+              <h2>Supreme Leader's Number: <span id="enemy-health"></span></h2>
             </div>
           </div>
           <div class="col-md-2">
-            <div class="box-2">
-              <div class="characters" id="lucky">
-                <img src="assets/images/tspluckydayfront.png" />
-                <h2>LUCKY DAY</h2>
-              </div>
+            <div class="characters" id="heavy">
+              <img src="assets/images/tspheavydutyfront.png" />
+              <h2>HEAVY DUTY</h2>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="characters" id="lucky">
+              <img src="assets/images/tspluckydayfront.png" />
+              <h2>LUCKY DAY</h2>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="container-fluid">
-        <div class="row panel-body">
+      <div class="row counters">
+        <div class="col-sm-6">
+          <h2>Your Score: <span id="score"></span></h2>
+        </div>
+        <div class="col-sm-6">
+          <h2>Wins: <span id="wins"></span></h2>
+        </div>
+      </div>
+      <div class="row loses">
+        <div class="col-sm-6">
+    
+        </div>
+        <div class="col-sm-6">
+          <h2>Losses: <span id="losses"></span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="gameoverbox"></div>
+    </div> 
+            <div class="container-fluid"></div>
+      
+            <div class="row panel-body">
           <div class="col-sm-12" id="audioControl">
             <audio
               id="myAudio"
@@ -94,7 +116,6 @@
           </div>
         </div>
       </div>
-      <!--Rules End-->
     </div>
 
     <!-- Optional JavaScript -->
